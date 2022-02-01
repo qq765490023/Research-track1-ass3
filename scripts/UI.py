@@ -55,7 +55,7 @@ def take_action(regions): #action of the laser data. In this part CA_status will
       vel.linear.x = 0
       pub_vel.publish(vel) 
     
-def KB_control():
+def KB_control(): #this is for keyboard control
   print('please input the command:\nw: move forward and speed up\ns: stop\nx: backward\na: turn left\nd: turn right\nq: quit\n')
   vel = Twist()
   while True:  # making a loop
